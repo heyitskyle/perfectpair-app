@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27C7C3632BBF86A500721D37 /* The_Perfect_PairApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C3622BBF86A500721D37 /* The_Perfect_PairApp.swift */; };
+		276C331B2BCAF42C006F860C /* CoreMLServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C331A2BCAF42C006F860C /* CoreMLServices.swift */; };
+		27C7C3632BBF86A500721D37 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C3622BBF86A500721D37 /* App.swift */; };
 		27C7C3652BBF86A500721D37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C3642BBF86A500721D37 /* ContentView.swift */; };
-		27C7C3672BBF86A500721D37 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C3662BBF86A500721D37 /* Item.swift */; };
 		27C7C3692BBF86A600721D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C7C3682BBF86A600721D37 /* Assets.xcassets */; };
 		27C7C36D2BBF86A600721D37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C7C36C2BBF86A600721D37 /* Preview Assets.xcassets */; };
 		27C7C3772BBF86A600721D37 /* The_Perfect_PairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C3762BBF86A600721D37 /* The_Perfect_PairTests.swift */; };
@@ -35,12 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		276C331A2BCAF42C006F860C /* CoreMLServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLServices.swift; sourceTree = "<group>"; };
 		27C7C35F2BBF86A500721D37 /* The Perfect Pair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Perfect Pair.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27C7C3622BBF86A500721D37 /* The_Perfect_PairApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Perfect_PairApp.swift; sourceTree = "<group>"; };
+		27C7C3622BBF86A500721D37 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		27C7C3642BBF86A500721D37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		27C7C3662BBF86A500721D37 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		27C7C3682BBF86A600721D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		27C7C36A2BBF86A600721D37 /* The_Perfect_Pair.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = The_Perfect_Pair.entitlements; sourceTree = "<group>"; };
+		27C7C36A2BBF86A600721D37 /* ThePerfectPair.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThePerfectPair.entitlements; sourceTree = "<group>"; };
 		27C7C36C2BBF86A600721D37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27C7C3722BBF86A600721D37 /* The Perfect PairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Perfect PairTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C7C3762BBF86A600721D37 /* The_Perfect_PairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Perfect_PairTests.swift; sourceTree = "<group>"; };
@@ -74,6 +74,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		276C330D2BC9ED7D006F860C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27C7C3642BBF86A500721D37 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		276C330E2BC9ED82006F860C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		276C330F2BC9ED88006F860C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		276C33182BCAF3F8006F860C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				276C331A2BCAF42C006F860C /* CoreMLServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		276C33192BCAF401006F860C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				27C7C3622BBF86A500721D37 /* App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		276C331C2BCAF495006F860C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27C7C3682BBF86A600721D37 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		276C331D2BCAF49F006F860C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				27C7C36A2BBF86A600721D37 /* ThePerfectPair.entitlements */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		276C331E2BCAF511006F860C /* MLPackages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MLPackages;
+			sourceTree = "<group>";
+		};
 		27C7C3562BBF86A500721D37 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +158,14 @@
 		27C7C3612BBF86A500721D37 /* The Perfect Pair */ = {
 			isa = PBXGroup;
 			children = (
-				27C7C3622BBF86A500721D37 /* The_Perfect_PairApp.swift */,
-				27C7C3642BBF86A500721D37 /* ContentView.swift */,
-				27C7C3662BBF86A500721D37 /* Item.swift */,
-				27C7C3682BBF86A600721D37 /* Assets.xcassets */,
-				27C7C36A2BBF86A600721D37 /* The_Perfect_Pair.entitlements */,
+				276C331E2BCAF511006F860C /* MLPackages */,
+				276C331D2BCAF49F006F860C /* SupportingFiles */,
+				276C331C2BCAF495006F860C /* Resources */,
+				276C33192BCAF401006F860C /* App */,
+				276C33182BCAF3F8006F860C /* Services */,
+				276C330F2BC9ED88006F860C /* ViewModels */,
+				276C330E2BC9ED82006F860C /* Models */,
+				276C330D2BC9ED7D006F860C /* Views */,
 				27C7C36B2BBF86A600721D37 /* Preview Content */,
 			);
 			path = "The Perfect Pair";
@@ -263,8 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C7C3652BBF86A500721D37 /* ContentView.swift in Sources */,
-				27C7C3672BBF86A500721D37 /* Item.swift in Sources */,
-				27C7C3632BBF86A500721D37 /* The_Perfect_PairApp.swift in Sources */,
+				27C7C3632BBF86A500721D37 /* App.swift in Sources */,
+				276C331B2BCAF42C006F860C /* CoreMLServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "The Perfect Pair/The_Perfect_Pair.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "The Perfect Pair/ThePerfectPair.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"The Perfect Pair/Preview Content\"";
@@ -443,10 +507,12 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kylelehmann.The-Perfect-Pair";
+				PRODUCT_BUNDLE_IDENTIFIER = kylelehmann.ThePerfectPair;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,7 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "The Perfect Pair/The_Perfect_Pair.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "The Perfect Pair/ThePerfectPair.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"The Perfect Pair/Preview Content\"";
@@ -481,10 +547,12 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kylelehmann.The-Perfect-Pair";
+				PRODUCT_BUNDLE_IDENTIFIER = kylelehmann.ThePerfectPair;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
