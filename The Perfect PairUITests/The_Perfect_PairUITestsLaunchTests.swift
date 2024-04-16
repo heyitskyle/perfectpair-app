@@ -1,13 +1,6 @@
-//
-//  The_Perfect_PairUITestsLaunchTests.swift
-//  The Perfect PairUITests
-//
-//  Created by Kyle Lehmann on 4/4/24.
-//
-
 import XCTest
 
-final class The_Perfect_PairUITestsLaunchTests: XCTestCase {
+final class ThePerfectPairUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
