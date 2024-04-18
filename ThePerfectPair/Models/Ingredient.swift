@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Ingredient: Decodable, PersistentModel {
+final class Ingredient: Decodable {
     let id: Int
     let name: String
     let categoryId: Int

@@ -1,7 +1,7 @@
 import Foundation
 import SwiftData
 
-class IngredientModelContainer {
+class IngredientDataService {
     private var container: ModelContainer?
     let modelConfiguration = ModelConfiguration(isStoredInMemoryOnly: false, allowsSave: true)
 
@@ -14,27 +14,21 @@ class IngredientModelContainer {
         }
     }
 
-    private func readJsonData<T: Decodable>(from filename: String, modelType: T.Type) async -> [T] {
+    private func readJsonData<T: Decodable>(from filename: String, modelType: T.Type) async throws -> [T] {
         guard let url = Bundle.main.url(forResource: filename, withExtension: "json"),
-                let data = try? Data(contentsOf: url) else {
-            print("Error loading data from file: \(filename)")
-            return []
+              let data = try? Data(contentsOf: url) else {
+            throw NSError(domain: "DataLoadError", code: 1001, userInfo: [NSLocalizedDescriptionKey: "Failed to load data from file: \(filename)"])
         }
-        do {
-            let decoder = JSONDecoder()
-            return try decoder.decode([T].self, from: data)
-        } catch {
-            print("Error decoding data: \(error)")
-            return []
-        }
+        let decoder = JSONDecoder()
+        return try decoder.decode([T].self, from: data)
     }
 
-    func createIngredientModels() async {
-        let ingredients = await readJsonData(from: "ingredient_data", modelType: Ingredient.self)
-        let categories = await readJsonData(from: "category2id", modelType: IngredientCategory.self)
-        let embeddings = await readJsonData(from: "embedding_data", modelType: MLEmbedding.self)
+    func createIngredientModels(ingredientsFilename: String, categoriesFilename: String, embeddingsFilename: String) async throws {
+        let ingredients = try await readJsonData(from: ingredientsFilename, modelType: Ingredient.self)
+        let categories = try await readJsonData(from: categoriesFilename, modelType: IngredientCategory.self)
+        let embeddings = try await readJsonData(from: embeddingsFilename, modelType: MLEmbedding.self)
         
-        await MainActor.run {
+        try await MainActor.run {
             if let context = container?.mainContext {
                 for ingredient in ingredients {
                     context.insert(ingredient)
@@ -49,7 +43,7 @@ class IngredientModelContainer {
                 do {
                     try context.save()
                 } catch {
-                    print("Error saving context: \(error)")
+                    throw error
                 }
             }
         }

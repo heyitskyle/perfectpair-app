@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class MLEmbedding: Decodable, PersistentModel {
+final class MLEmbedding: Decodable {
     let embedding: [Double]
     let ingredientId: Int
     

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		276C33262BCAFCB1006F860C /* RecommenderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C33252BCAFCB1006F860C /* RecommenderService.swift */; };
-		276C33282BCB3338006F860C /* IngredientModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C33272BCB3338006F860C /* IngredientModelContainer.swift */; };
+		276C33262BCAFCB1006F860C /* PairModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C33252BCAFCB1006F860C /* PairModelService.swift */; };
 		27B4D1212BCE2FFE00CA03D8 /* category2id.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B4D11E2BCE2FFE00CA03D8 /* category2id.json */; };
 		27B4D1222BCE2FFE00CA03D8 /* ingredient_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B4D11F2BCE2FFE00CA03D8 /* ingredient_data.json */; };
 		27B4D1242BCE309400CA03D8 /* embedding_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B4D1232BCE309400CA03D8 /* embedding_data.json */; };
@@ -16,18 +15,16 @@
 		27B4D1282BCEC7D800CA03D8 /* IngredientCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4D1272BCEC7D800CA03D8 /* IngredientCategory.swift */; };
 		27B4D12A2BCEC84400CA03D8 /* MLEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4D1292BCEC84400CA03D8 /* MLEmbedding.swift */; };
 		27B4D12E2BCF160D00CA03D8 /* PairModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 27B4D12D2BCF160D00CA03D8 /* PairModel.mlpackage */; };
-		27B4D1352BCF24DE00CA03D8 /* embedding_test_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B4D1342BCF24DE00CA03D8 /* embedding_test_data.json */; };
-		27B4D13A2BCF2D4000CA03D8 /* IngredientSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4D1392BCF2D4000CA03D8 /* IngredientSearchViewModel.swift */; };
-		27B4D13C2BCF32A500CA03D8 /* RecommendationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4D13B2BCF32A500CA03D8 /* RecommendationViewModel.swift */; };
-		27B4D13E2BCF32C300CA03D8 /* IngredientSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4D13D2BCF32C300CA03D8 /* IngredientSearchView.swift */; };
-		27B4D1402BCF32D200CA03D8 /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4D13F2BCF32D200CA03D8 /* RecommendationView.swift */; };
+		27B4D1442BCF62BF00CA03D8 /* IngredientDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4D1432BCF62BF00CA03D8 /* IngredientDataService.swift */; };
 		27C7C3632BBF86A500721D37 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C3622BBF86A500721D37 /* App.swift */; };
 		27C7C3652BBF86A500721D37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C3642BBF86A500721D37 /* ContentView.swift */; };
 		27C7C3692BBF86A600721D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C7C3682BBF86A600721D37 /* Assets.xcassets */; };
 		27C7C36D2BBF86A600721D37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C7C36C2BBF86A600721D37 /* Preview Assets.xcassets */; };
-		27C7C3772BBF86A600721D37 /* ThePerfectPairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C3762BBF86A600721D37 /* ThePerfectPairTests.swift */; };
-		27C7C3812BBF86A600721D37 /* The_Perfect_PairUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C3802BBF86A600721D37 /* The_Perfect_PairUITests.swift */; };
-		27C7C3832BBF86A600721D37 /* The_Perfect_PairUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C3822BBF86A600721D37 /* The_Perfect_PairUITestsLaunchTests.swift */; };
+		27F47F6A2BCF66AA005A2268 /* PairModelServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F47F682BCF66AA005A2268 /* PairModelServiceTests.swift */; };
+		27F47F6E2BCF66BA005A2268 /* embedding_test_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 27F47F6C2BCF66BA005A2268 /* embedding_test_data.json */; };
+		27F47F712BCF66EF005A2268 /* ThePerfectPairUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F47F6F2BCF66EF005A2268 /* ThePerfectPairUITests.swift */; };
+		27F47F722BCF66EF005A2268 /* ThePerfectPairUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F47F702BCF66EF005A2268 /* ThePerfectPairUITestsLaunchTests.swift */; };
+		27F47F752BD06D05005A2268 /* IngredientDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F47F742BD06D05005A2268 /* IngredientDataServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		276C33252BCAFCB1006F860C /* RecommenderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommenderService.swift; sourceTree = "<group>"; };
-		276C33272BCB3338006F860C /* IngredientModelContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModelContainer.swift; sourceTree = "<group>"; };
+		276C33252BCAFCB1006F860C /* PairModelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairModelService.swift; sourceTree = "<group>"; };
 		27B4D11E2BCE2FFE00CA03D8 /* category2id.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category2id.json; sourceTree = "<group>"; };
 		27B4D11F2BCE2FFE00CA03D8 /* ingredient_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ingredient_data.json; sourceTree = "<group>"; };
 		27B4D1232BCE309400CA03D8 /* embedding_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = embedding_data.json; sourceTree = "<group>"; };
@@ -57,22 +53,20 @@
 		27B4D1272BCEC7D800CA03D8 /* IngredientCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCategory.swift; sourceTree = "<group>"; };
 		27B4D1292BCEC84400CA03D8 /* MLEmbedding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLEmbedding.swift; sourceTree = "<group>"; };
 		27B4D12D2BCF160D00CA03D8 /* PairModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = PairModel.mlpackage; sourceTree = "<group>"; };
-		27B4D1342BCF24DE00CA03D8 /* embedding_test_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = embedding_test_data.json; sourceTree = "<group>"; };
-		27B4D1392BCF2D4000CA03D8 /* IngredientSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientSearchViewModel.swift; sourceTree = "<group>"; };
-		27B4D13B2BCF32A500CA03D8 /* RecommendationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationViewModel.swift; sourceTree = "<group>"; };
-		27B4D13D2BCF32C300CA03D8 /* IngredientSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientSearchView.swift; sourceTree = "<group>"; };
-		27B4D13F2BCF32D200CA03D8 /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
+		27B4D1432BCF62BF00CA03D8 /* IngredientDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientDataService.swift; sourceTree = "<group>"; };
 		27C7C35F2BBF86A500721D37 /* ThePerfectPair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePerfectPair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C7C3622BBF86A500721D37 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		27C7C3642BBF86A500721D37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		27C7C3682BBF86A600721D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		27C7C36A2BBF86A600721D37 /* ThePerfectPair.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThePerfectPair.entitlements; sourceTree = "<group>"; };
+		27C7C36A2BBF86A600721D37 /* ThePerfectPair.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ThePerfectPair.entitlements; path = ThePerfectPair/SupportingFiles/ThePerfectPair.entitlements; sourceTree = SOURCE_ROOT; };
 		27C7C36C2BBF86A600721D37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27C7C3722BBF86A600721D37 /* ThePerfectPairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThePerfectPairTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27C7C3762BBF86A600721D37 /* ThePerfectPairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePerfectPairTests.swift; sourceTree = "<group>"; };
 		27C7C37C2BBF86A600721D37 /* ThePerfectPairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThePerfectPairUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27C7C3802BBF86A600721D37 /* The_Perfect_PairUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Perfect_PairUITests.swift; sourceTree = "<group>"; };
-		27C7C3822BBF86A600721D37 /* The_Perfect_PairUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Perfect_PairUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27F47F682BCF66AA005A2268 /* PairModelServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairModelServiceTests.swift; sourceTree = "<group>"; };
+		27F47F6C2BCF66BA005A2268 /* embedding_test_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = embedding_test_data.json; sourceTree = "<group>"; };
+		27F47F6F2BCF66EF005A2268 /* ThePerfectPairUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThePerfectPairUITests.swift; sourceTree = "<group>"; };
+		27F47F702BCF66EF005A2268 /* ThePerfectPairUITestsLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThePerfectPairUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27F47F742BD06D05005A2268 /* IngredientDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientDataServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				27C7C3642BBF86A500721D37 /* ContentView.swift */,
-				27B4D13D2BCF32C300CA03D8 /* IngredientSearchView.swift */,
-				27B4D13F2BCF32D200CA03D8 /* RecommendationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,7 +105,6 @@
 		276C330E2BC9ED82006F860C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				276C33272BCB3338006F860C /* IngredientModelContainer.swift */,
 				27B4D1252BCEC7CE00CA03D8 /* Ingredient.swift */,
 				27B4D1272BCEC7D800CA03D8 /* IngredientCategory.swift */,
 				27B4D1292BCEC84400CA03D8 /* MLEmbedding.swift */,
@@ -124,8 +115,6 @@
 		276C330F2BC9ED88006F860C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				27B4D1392BCF2D4000CA03D8 /* IngredientSearchViewModel.swift */,
-				27B4D13B2BCF32A500CA03D8 /* RecommendationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -133,7 +122,8 @@
 		276C33182BCAF3F8006F860C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				276C33252BCAFCB1006F860C /* RecommenderService.swift */,
+				27B4D1432BCF62BF00CA03D8 /* IngredientDataService.swift */,
+				276C33252BCAFCB1006F860C /* PairModelService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -167,20 +157,31 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		27B4D1332BCF24C800CA03D8 /* Resources */ = {
+		277246E12BCF6624000BA110 /* ThePerfectPairUITests */ = {
 			isa = PBXGroup;
 			children = (
-				27B4D1342BCF24DE00CA03D8 /* embedding_test_data.json */,
+				27F47F6F2BCF66EF005A2268 /* ThePerfectPairUITests.swift */,
+				27F47F702BCF66EF005A2268 /* ThePerfectPairUITestsLaunchTests.swift */,
 			);
-			path = Resources;
+			path = ThePerfectPairUITests;
+			sourceTree = "<group>";
+		};
+		277246E22BCF6659000BA110 /* ThePerfectPairTests */ = {
+			isa = PBXGroup;
+			children = (
+				27F47F6D2BCF66BA005A2268 /* Resources */,
+				27F47F682BCF66AA005A2268 /* PairModelServiceTests.swift */,
+				27F47F742BD06D05005A2268 /* IngredientDataServiceTests.swift */,
+			);
+			path = ThePerfectPairTests;
 			sourceTree = "<group>";
 		};
 		27C7C3562BBF86A500721D37 = {
 			isa = PBXGroup;
 			children = (
 				27C7C3612BBF86A500721D37 /* ThePerfectPair */,
-				27C7C3752BBF86A600721D37 /* The Perfect PairTests */,
-				27C7C37F2BBF86A600721D37 /* The Perfect PairUITests */,
+				277246E22BCF6659000BA110 /* ThePerfectPairTests */,
+				277246E12BCF6624000BA110 /* ThePerfectPairUITests */,
 				27C7C3602BBF86A500721D37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -198,6 +199,7 @@
 		27C7C3612BBF86A500721D37 /* ThePerfectPair */ = {
 			isa = PBXGroup;
 			children = (
+				27F47F732BCF692C005A2268 /* Preview Content */,
 				276C33192BCAF401006F860C /* App */,
 				276C331C2BCAF495006F860C /* Resources */,
 				276C33182BCAF3F8006F860C /* Services */,
@@ -209,22 +211,19 @@
 			path = ThePerfectPair;
 			sourceTree = "<group>";
 		};
-		27C7C3752BBF86A600721D37 /* The Perfect PairTests */ = {
+		27F47F6D2BCF66BA005A2268 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				27B4D1332BCF24C800CA03D8 /* Resources */,
-				27C7C3762BBF86A600721D37 /* ThePerfectPairTests.swift */,
+				27F47F6C2BCF66BA005A2268 /* embedding_test_data.json */,
 			);
-			path = "The Perfect PairTests";
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		27C7C37F2BBF86A600721D37 /* The Perfect PairUITests */ = {
+		27F47F732BCF692C005A2268 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				27C7C3802BBF86A600721D37 /* The_Perfect_PairUITests.swift */,
-				27C7C3822BBF86A600721D37 /* The_Perfect_PairUITestsLaunchTests.swift */,
 			);
-			path = "The Perfect PairUITests";
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,10 +297,12 @@
 					};
 					27C7C3712BBF86A600721D37 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 						TestTargetID = 27C7C35E2BBF86A500721D37;
 					};
 					27C7C37B2BBF86A600721D37 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 						TestTargetID = 27C7C35E2BBF86A500721D37;
 					};
 				};
@@ -343,7 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B4D1352BCF24DE00CA03D8 /* embedding_test_data.json in Resources */,
+				27F47F6E2BCF66BA005A2268 /* embedding_test_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,17 +363,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B4D12A2BCEC84400CA03D8 /* MLEmbedding.swift in Sources */,
-				27B4D13A2BCF2D4000CA03D8 /* IngredientSearchViewModel.swift in Sources */,
-				27B4D13E2BCF32C300CA03D8 /* IngredientSearchView.swift in Sources */,
-				276C33262BCAFCB1006F860C /* RecommenderService.swift in Sources */,
+				276C33262BCAFCB1006F860C /* PairModelService.swift in Sources */,
 				27B4D1262BCEC7CE00CA03D8 /* Ingredient.swift in Sources */,
-				276C33282BCB3338006F860C /* IngredientModelContainer.swift in Sources */,
 				27C7C3652BBF86A500721D37 /* ContentView.swift in Sources */,
 				27C7C3632BBF86A500721D37 /* App.swift in Sources */,
-				27B4D13C2BCF32A500CA03D8 /* RecommendationViewModel.swift in Sources */,
 				27B4D12E2BCF160D00CA03D8 /* PairModel.mlpackage in Sources */,
 				27B4D1282BCEC7D800CA03D8 /* IngredientCategory.swift in Sources */,
-				27B4D1402BCF32D200CA03D8 /* RecommendationView.swift in Sources */,
+				27B4D1442BCF62BF00CA03D8 /* IngredientDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27C7C3772BBF86A600721D37 /* ThePerfectPairTests.swift in Sources */,
+				27F47F752BD06D05005A2268 /* IngredientDataServiceTests.swift in Sources */,
+				27F47F6A2BCF66AA005A2268 /* PairModelServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,8 +386,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27C7C3832BBF86A600721D37 /* The_Perfect_PairUITestsLaunchTests.swift in Sources */,
-				27C7C3812BBF86A600721D37 /* The_Perfect_PairUITests.swift in Sources */,
+				27F47F722BCF66EF005A2268 /* ThePerfectPairUITestsLaunchTests.swift in Sources */,
+				27F47F712BCF66EF005A2268 /* ThePerfectPairUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +440,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ThePerfectPair/SupportingFiles/ThePerfectPair.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -504,6 +503,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ThePerfectPair/SupportingFiles/ThePerfectPair.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -530,10 +530,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "The Perfect Pair/ThePerfectPair.entitlements";
+				CODE_SIGN_ENTITLEMENTS = ThePerfectPair/SupportingFiles/ThePerfectPair.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"The Perfect Pair/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ThePerfectPair/Preview Content\"";
 				DEVELOPMENT_TEAM = L2Q3UFSD2C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -573,10 +573,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "The Perfect Pair/ThePerfectPair.entitlements";
+				CODE_SIGN_ENTITLEMENTS = ThePerfectPair/SupportingFiles/ThePerfectPair.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"The Perfect Pair/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ThePerfectPair/Preview Content\"";
 				DEVELOPMENT_TEAM = L2Q3UFSD2C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -616,6 +616,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ThePerfectPair/SupportingFiles/ThePerfectPair.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L2Q3UFSD2C;
@@ -628,6 +630,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThePerfectPair.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThePerfectPair";
@@ -639,6 +642,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ThePerfectPair/SupportingFiles/ThePerfectPair.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L2Q3UFSD2C;
@@ -661,6 +666,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ThePerfectPair/SupportingFiles/ThePerfectPair.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L2Q3UFSD2C;
@@ -673,6 +680,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "The Perfect Pair";
@@ -683,6 +691,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ThePerfectPair/SupportingFiles/ThePerfectPair.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L2Q3UFSD2C;
