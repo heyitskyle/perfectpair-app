@@ -3,9 +3,16 @@ import SwiftData
 
 @main
 struct ThePerfectPairApp: App {
+    @StateObject private var ingredientModelContainer = IngredientModelContainer()
+    
+    init() {
+    }
+    
     var body: some Scene {
         WindowGroup {
-            Text("hello")
+            ContentView()
+                .environmentObject(ingredientModelContainer)
+                .task {}
         }
     }
 }

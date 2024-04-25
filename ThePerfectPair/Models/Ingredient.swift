@@ -1,9 +1,8 @@
 import Foundation
 import SwiftData
 
-@Model
-final class Ingredient: Decodable {
-    let id: Int
+@Model final class Ingredient: Decodable {
+    @Attribute(.unique) let id: Int
     let name: String
     let categoryId: Int
     let formattedName: String
@@ -12,6 +11,13 @@ final class Ingredient: Decodable {
         case id, name, category_id, formatted_name
     }
 
+    init(id: Int=0, name: String="", categoryId: Int=0, formattedName: String="") {
+        self.id = id
+        self.name = name
+        self.categoryId = categoryId
+        self.formattedName = formattedName
+    }
+    
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(Int.self, forKey: .id)

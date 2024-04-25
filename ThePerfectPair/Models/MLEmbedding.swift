@@ -1,13 +1,17 @@
 import Foundation
 import SwiftData
 
-@Model
-final class MLEmbedding: Decodable {
+@Model final class MLEmbedding: Decodable {
+    @Attribute(.unique) let ingredientId: Int
     let embedding: [Double]
-    let ingredientId: Int
     
     enum CodingKeys: String, CodingKey {
         case ingredient_id, embedding
+    }
+    
+    init(embedding: [Double]=[], ingredientId: Int=0) {
+        self.embedding = embedding
+        self.ingredientId = ingredientId
     }
     
     required init(from decoder: Decoder) throws {
