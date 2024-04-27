@@ -2,28 +2,16 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @EnvironmentObject var ingredientModelContainer: IngredientModelContainer
-    @State private var searchbarText = ""
-    @State private var displayWelcomeView = true
-    
-    let searchablePrompt = "Search over 6,000 ingredients…"
+    @EnvironmentObject var ingredientModelContainer: IngredientModelService
     
     var body: some View {
-        NavigationSplitView {
-            if displayWelcomeView {
-                WelcomeView()
-            } else {
-                IngredientListView()
-            }
-        } detail: {
-            Text("detail")
-        }
-        .searchable(text: $searchbarText, placement: .sidebar, prompt: searchablePrompt)
+        IngredientSelectionView()
     }
 }
 
-#Preview {
-    let ingredientModelContainer = IngredientModelContainer()
-    return ContentView()
-        .modelContainer(ingredientModelContainer.container)
-}
+//#Preview {
+//    let ingredientModelService = IngredientModelService()
+//    ingredientModelService.populateFromJSON(ingredientsFilename: "test_ingredient_data")
+//    return ContentView()
+//        .modelContainer(ingredientModelService.container)
+//}

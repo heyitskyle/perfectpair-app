@@ -1,18 +1,38 @@
-//
-//  IngredientSelectionView.swift
-//  ThePerfectPair
-//
-//  Created by Kyle Lehmann on 4/22/24.
-//
-
 import SwiftUI
+import SwiftData
 
 struct IngredientSelectionView: View {
+//    @EnvironmentObject var ingredientModelContainer: IngredientModelContainer
+    @Query(sort: \Ingredient.formattedName) var ingredients: [Ingredient]
+    
+    let searchablePrompt = "Search over 6,000 ingredients…"
+    
+    @State private var searchbarText = ""
+    @State private var displayWelcomeView = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationSplitView {
+            if displayWelcomeView {
+                WelcomeView()
+            } else {
+                List {
+                    ForEach(ingredients) { ingredient in
+                        VStack(alignment: .leading, content: {
+                            Text(ingredient.name)
+                        })
+                    }
+                }
+            }
+        } detail: {
+            Text("detail")
+        }
+        .searchable(text: $searchbarText, placement: .sidebar, prompt: searchablePrompt)
     }
 }
 
 #Preview {
-    IngredientSelectionView()
+    let ingredientModelService = IngredientModelService()
+    ingredientModelService.populateFromJSON(ingredientsFilename: "test_ingredient_data")
+    return IngredientSelectionView()
+        .modelContainer(ingredientModelService.container)
 }

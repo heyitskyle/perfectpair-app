@@ -3,7 +3,7 @@ import SwiftData
 
 @main
 struct ThePerfectPairApp: App {
-    @StateObject private var ingredientModelContainer = IngredientModelContainer()
+    @StateObject private var ingredientModelContainer = IngredientModelService()
     
     init() {
     }
