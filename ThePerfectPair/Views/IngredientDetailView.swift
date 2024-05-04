@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct IngredientDetailView: View {
-    @EnvironmentObject var ingredientModelContainer: IngredientModelService
+//    @EnvironmentObject var ingredientModelContainer: IngredientModelService
     var ingredient: Ingredient
 
     var body: some View {
@@ -21,9 +21,9 @@ struct IngredientDetailView: View {
 }
 
 
-#Preview {
-    let ingredientModelService = IngredientModelService()
-    ingredientModelService.populateFromJSON(ingredientsFilename: "test_ingredient_data")
-    return IngredientSelectionView()
-        .modelContainer(ingredientModelService.container)
-}
+//#Preview {
+//    let ingredientModelService = IngredientModelService()
+//    ingredientModelService.populateFromJSON(ingredientsFilename: "test_ingredient_data")
+//    return IngredientSelectionView()
+//        .modelContainer(ingredientModelService.container)
+//}

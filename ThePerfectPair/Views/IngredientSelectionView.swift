@@ -2,37 +2,39 @@ import SwiftUI
 import SwiftData
 
 struct IngredientSelectionView: View {
-//    @EnvironmentObject var ingredientModelContainer: IngredientModelContainer
-    @Query(sort: \Ingredient.formattedName) var ingredients: [Ingredient]
-    
-    let searchablePrompt = "Search over 6,000 ingredients…"
+    @EnvironmentObject var ingredientModelService: IngredientModelService
+    @Binding var ingredientDataStatus: AppConfig.States
+    @Binding var embeddingDataStatus: AppConfig.States
     
     @State private var searchbarText = ""
-    @State private var displayWelcomeView = false
+    @State private var showAllIngredients: Bool = false
+
+    let pageTitle = "Let's find your perfect pair."
+    let searchablePrompt = "Search over 6,000 ingredients…"
+    enum showIngredientsText: String {
+        case blocked = "Please wait for ingredient data to load."
+        case ready = "Show All Ingredients"
+    }
     
     var body: some View {
         NavigationSplitView {
-            if displayWelcomeView {
-                WelcomeView()
-            } else {
-                List {
-                    ForEach(ingredients) { ingredient in
-                        VStack(alignment: .leading, content: {
-                            Text(ingredient.name)
+            VStack {
+                Text(pageTitle)
+                    .font(.title)
+                if showAllIngredients == true {
+                    Text("List")
+                } else {
+                    if ingredientDataStatus == AppConfig.States.complete {
+                        Button(action: { showAllIngredients = true }, label: {
+                            Text(showIngredientsText.ready.rawValue)
                         })
+                    } else {
+                        Text(showIngredientsText.blocked.rawValue)
                     }
                 }
             }
         } detail: {
-            Text("detail")
+            Text("Perfect Pair")
         }
-        .searchable(text: $searchbarText, placement: .sidebar, prompt: searchablePrompt)
     }
-}
-
-#Preview {
-    let ingredientModelService = IngredientModelService()
-    ingredientModelService.populateFromJSON(ingredientsFilename: "test_ingredient_data")
-    return IngredientSelectionView()
-        .modelContainer(ingredientModelService.container)
 }

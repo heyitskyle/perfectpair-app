@@ -17,10 +17,10 @@ let id2IngredientCategory = [
 
 @Model
 final class IngredientCategory {
-    @Attribute(.unique)
-    let categoryId: Int
     let name: String
     let ingredients: [Ingredient]?
+    @Attribute(.unique)
+    let categoryID: Int
     
     enum CodingKeys: String, CodingKey {
         case name, categoryId
@@ -28,10 +28,10 @@ final class IngredientCategory {
     
     init(categoryId: Int) throws {
         if let unwrappedName = id2IngredientCategory[categoryId] {
-            self.categoryId = categoryId
+            self.categoryID = categoryId
             self.name = unwrappedName
         } else {
-            throw InitializationError.invalidCategoryId
+            throw NSError(domain: "IngredientCategory", code: 1001, userInfo: [NSLocalizedDescriptionKey: "Encountered nil ingredient category."])
         }
     }
 }
